@@ -34,8 +34,25 @@ void printArray(string[] array)
 }
 
 
-
+// Тут жестко варианты трех входных данных из задания и решение...
 Console.Clear();
 Console.WriteLine("Исходный массив:");
 string[] array= new string[4] {"hello","2","world",":-)"};
 printArray(array);
+Console.WriteLine("Массив с количеством символов не более трех:");
+printArray(fillToThree(array));
+Console.WriteLine();
+
+Console.WriteLine("Исходный массив:");
+array= new string[4] {"1234","1567","-2","computer science"};
+printArray(array);
+Console.WriteLine("Массив с количеством символов не более трех:");
+printArray(fillToThree(array));
+Console.WriteLine();
+
+Console.WriteLine("Исходный массив:");
+array= new string[3] {"Russia","Denmark","Kazan"};
+printArray(array);
+Console.WriteLine("Массив с количеством символов не более трех:");
+printArray(fillToThree(array));
+
